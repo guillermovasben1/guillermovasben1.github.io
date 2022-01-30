@@ -1,0 +1,271 @@
+body{
+    margin: 5px;
+    border: radius 5px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Para iniciar siempre la letra con bordes, y los margenes y padding en 0 para evitar problems */
+
+html {
+font-size: 62.5%;
+}
+/* Este hace referencia a la ruta del elemento, si yo por defecto doy un REM el tomara como rute el elemento contenedor, y sabemos que en el documento HTML, la medida por defecto es 16px, por eso un REM siempre equivaldrá a 16px
+1REM=16px
+Existe un truco para hacer que cada REM equivalga a 10px, y es poner el Font size en 62.5%, en el HTML */
+main{
+    width: inherit;
+    height: 1500px;
+    background-color:#293133;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.logo{
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+.logo:hover{
+transform: rotateY(180deg);
+}
+
+body header ul li a {
+    text-decoration:none;
+    color:white;
+}
+
+body header ul li  :hover{
+    color: blue;
+    font-size: 25px;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+li{
+    text-decoration: none;
+    /* esto elimina el subrrayado de las letras */
+    color: black;
+    margin: 1rem;
+    font-size: 20px;
+    list-style-type: none;   
+    /* esto elimina los bullets */
+}
+.tittle{
+    color: gainsboro;
+    font-size:50px;
+    text-align: center;
+}
+
+.subtittle{
+    color: gainsboro;
+    font-size:30px;
+    text-align: center;
+}
+
+.container-page{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    margin-left: 70px;
+    margin-right:70px;
+    
+}
+.img-principal{
+    margin: 30px;
+    height: 330px;
+}
+
+.img-principal-article2{
+    width:550px;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+.img2-article2{
+    margin-top: 20px;
+    margin-left:180px;
+    height: 310px;
+    align-items: center;
+}
+
+.img2-article3{
+    margin-top: 50px;
+    height:310px;
+    margin-left:40px;
+}
+
+.img-principal-article4{
+    width:550px;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.img-principal-article5{
+    width:350px;
+    height:400px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+.img2{
+    margin: 30px;
+    margin-left: 50px;
+    height: 350px;
+}
+
+.paragraph1{
+    font-size:20px;
+    color: gainsboro;
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.paragraph1-video{
+    font-size:20px;
+    color: gainsboro;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 70px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+footer{
+    background:white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 390px;
+    color: white;
+    display: flex;
+    border: black 2px  solid;
+}
+
+.img-footer{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.container_footer{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#181818;
+    
+}
+
+.tittle1_footer{
+    color: #196DC2;
+    margin: 8px;
+    
+    text-align: center;
+}
+.tittle1_footerb{
+    margin-top:0px;
+    color: #196DC2;
+}
+
+.p_footer{
+    color: #196DC2;
+    margin: 15px;
+    width: 250px;
+    text-align:center;
+}
+
+.tittle2_footer{
+    text-align:center;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    color: #196DC2;
+    text-align: center;
+}
+.tittle3_footer{
+    margin-bottom:20px;
+    color: #196DC2;
+    text-align: center;
+}
+
+.figure_footer{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin: 14.5px;
+}
+
+.column1{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+    margin-left: 20px;
+   margin-right: 20px;
+   width: 440px;
+}
+
+.column2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+   margin-right: 20px;
+   width: 440px;
+}
+.column3{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 440px;
+}
+label {
+    margin-left: 10px;
+    position: inherit;
+    color: #196DC2 ;
+}
+.copyright{
+    display:flex;
+    flex-direction:row;
+    background-color: #293133;
+    justify-content:space-evenly
+}
+    .copyright-label{
+        color:#196DC2;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .a-copyright{
+        color:#196DC2;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 200px;;
+    }

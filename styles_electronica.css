@@ -1,0 +1,288 @@
+body {
+  margin: 5px;
+  
+}
+
+main{
+  max-width:70%
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Para iniciar siempre la letra con bordes, y los margenes y padding en 0 para evitar problems */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Para iniciar siempre la letra con bordes, y los margenes y padding en 0 para evitar problems */
+
+html {
+  font-size: 62.5%;
+}
+/* Este hace referencia a la ruta del elemento, si yo por defecto doy un REM el tomara como rute el elemento contenedor, y sabemos que en el documento HTML, la medida por defecto es 16px, por eso un REM siempre equivaldrá a 16px
+1REM=16px
+Existe un truco para hacer que cada REM equivalga a 10px, y es poner el Font size en 62.5%, en el HTML */
+main {
+  width: inherit;
+  height: 100vh;
+  background-color: #293133;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  margin: 10px;
+  border-radius: 50%;
+  transition: all .4s ease-in-out;
+}
+
+
+body header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body header ul li :hover {
+  color: blue;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+li {
+  text-decoration: none;
+  /* esto elimina el subrrayado de las letras */
+  color: white;
+  margin: 1rem;
+  font-size: 20px;
+  list-style-type: none;
+  /* esto elimina los bullets */
+}
+.titulo {
+  font-size: 2rem;
+  color: #474b4e;
+}
+
+.contain_target {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 29%;
+  height: 45%;
+  margin: 20px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(139, 195, 74, 0.8);
+  /* da sombra a las tajetas aplicando el color en rgb el ultimo 0.8 nos dice el grado de transaparecia del color o opacidad */
+  cursor: default;
+  /* Hace que el cursor se mantenga como puntero cuando se ubica sobre las tarjetas */
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(139, 195, 94, 1);
+  /* da sombra a las tarjetas */
+  transform: translate(-1.5%, -1.5%);
+  /* mueve o anima en 2 dimensiones trasladando en el eje x y  */
+}
+
+.card img {
+  width: 95%;
+  margin: 2.5%;
+  height: 175px;
+  border-radius: 6px;
+}
+
+.card video {
+  width: 95%;
+  margin: 2.5%;
+  height: 175px;
+  border-radius: 6px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+  font-size: 1.5rem;
+}
+.card .contenido h1 {
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.card .contenido a {
+  font-size: 20px;
+  text-decoration-line: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  border-radius: 20%;
+  transition: all 400ms ease;
+}
+.card .contenido a:hover {
+  background: #293133;
+  color: white;
+}
+footer {
+  background: white;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 390px;
+  color: white;
+  display: flex;
+  border: black 2px  solid;
+}
+
+.img-footer {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.container_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #234B76;
+  
+}
+
+.tittle1_footer {
+  color: #29db14;
+  margin: 8px;
+
+  text-align: center;
+}
+.tittle1_footerb {
+  margin-top: 0px;
+  color: #29db14;
+}
+
+.p_footer {
+  color: #29db14;
+  margin: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.tittle2_footer {
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  color: #29db14;
+  text-align: center;
+}
+.tittle3_footer {
+  margin-bottom: 20px;
+  color: #29db14;
+  text-align: center;
+}
+
+.figure_footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 14.5px;
+}
+
+.column1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 440px;
+}
+
+.column2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 440px;
+}
+.column3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 440px;
+}
+
+a {
+  margin-left: 10px;
+  color: #29db14;
+  text-decoration: none;
+}
+.copyright-electronica{
+  border: black 2px  solid;
+  background-color: #293133;
+width: 1339px;;
+}
+.copyright-label {
+  display:inline;
+  color: #29db14;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 250px;
+}
+.a-copyright {
+  color: #29db14;
+  font-size: 20px;
+  text-decoration: none;
+  display:inline-block;
+  display:inline;
+}
+
+@media screen and (max-width:990px ) {
+  .nav{
+    max-width:80%;
+  }
+}
+
+
